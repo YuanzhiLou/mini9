@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 
-model = pipeline("text-generation", model="gpt2")
+model = pipeline("text-generation", model="openai-gpt")
 
 input_text = st.text_input("Enter some text")
 generate_button = st.button("Generate")
