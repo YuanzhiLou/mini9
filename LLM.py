@@ -7,4 +7,4 @@ generate_button = st.button("Generate Text")
 if generate_button:
     if input_text:
         output_text = model(input_text)[0]["generated_text"]
-        st.text(output_text, height=5)
+        st.markdown("<div>{generated_text}</div>", unsafe_allow_html=True)
