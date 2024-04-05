@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 
-model = pipeline("text-generation", model="openai-gpt")
+model = pipeline("text-generation", model="EleutherAI/gpt-neo-125M")
 input_text = st.text_area("Enter Text", height=100)
 generate_button = st.button("Generate Text")
 if generate_button:
